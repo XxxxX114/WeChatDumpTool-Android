@@ -1,0 +1,11 @@
+# 核心依赖
+sqlcipher3>=0.5.0
+lz4>=4.0.0
+
+# 可选依赖（去掉注释即可启用）
+# pycryptodome>=3.19.0
+#
+# 说明：
+#   sqlcipher3    解密 EnMicroMsg.db，必需。Windows 上编译失败可改装 sqlcipher3-binary。
+#   lz4           解开 lvbuffer 里 lz4 压缩的 XML；不装只是少数 type=49 消息显示成原始内容。
+#   pycryptodome  只在 `crack --brute` 暴破口令时需要；不装会自动跳过暴破。
